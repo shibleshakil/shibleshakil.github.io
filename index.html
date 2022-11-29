@@ -528,7 +528,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</li>
 		</ul>
 		<ul class="copyright">
-			<li>&copy; 2022. Shible Ahmed Shakil. All Rights Reserved</li>
+			<li> <span id="current_year"></span> &copy; Shible Ahmed Shakil. All Rights Reserved</li>
 			<li>Portfolio Integration By:
 				<a target="_blank" href="https://writeshahadat.github.io/">Shahadat Hossain </a>
 			</li>
@@ -542,6 +542,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var date = new Date();
+			$("#current_year").html(date.getFullYear());
+		})
+	</script>
 
 </body>
 
